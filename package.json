@@ -1,0 +1,39 @@
+{
+  "name": "faunatils",
+  "version": "0.1.0",
+  "author": "Ondřej Kocián",
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "faunadb": "^2.11.1",
+    "husky": "^4.2.1",
+    "tsdx": "^0.12.3",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/faunatils.esm.js",
+  "peerDependencies": {},
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "scripts": {
+    "build": "tsdx build",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test"
+  },
+  "typings": "dist/index.d.ts"
+}

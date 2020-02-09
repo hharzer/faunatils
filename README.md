@@ -1,0 +1,3 @@
+# Faunatils
+
+> FaunaDB Utils
